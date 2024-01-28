@@ -262,7 +262,7 @@ power management:
 Usage:
   top -hv | -bcEHiOSs1 -d secs -n max -u|U user -p pid(s) -o field -w [cols]
 10. Run the command **uname -a**. ***(1 mark)*** Linux codespaces-e2a9a7 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux.
-11. What is the available free memory in the system. ***(1 mark)*** @ICS619 ➜ /workspaces/OSProject (main) $ free -m
+11. What is the available free memory in the system. ***(1 mark)*** free -m
               total        used        free      shared  buff/cache   available
 Mem:           7929        1664         128           1        6137        5949
 Swap:             0           0           0
