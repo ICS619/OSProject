@@ -261,7 +261,7 @@ power management:
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** top: unknown option 'q'
 Usage:
   top -hv | -bcEHiOSs1 -d secs -n max -u|U user -p pid(s) -o field -w [cols]
-10. Run the command **uname -a**. ***(1 mark)*** Linux codespaces-e2a9a7 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux.
+10. Run the command **uname -a**. ***(1 mark)*** Linux codespaces-e2a9a7 6.2.0-1018-azure 18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux.
 11. What is the available free memory in the system. ***(1 mark)*** free -m
               total        used        free      shared  buff/cache   available
 Mem:           7929        1664         128           1        6137        5949
@@ -269,9 +269,9 @@ Swap:             0           0           0
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** /dev/loop3      32847680 13637292  17516292  44% /workspaces
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** Linux codespaces-e2a9a7 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux.
 14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** ls	Just file names ls -asl	All files with details like size, date, and type
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+15. What is the TLB size of the Virtual CPU. ***(1 mark)***  2560 4K pages
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** cpu MHz         : 3243.639
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 490 codespa+  20   0   21.1g 326344  46336 S   2.3   4.0   0:13.34 node   
 
 ## Running your own container instance.
 
@@ -331,8 +331,8 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** When a container is deleted, the data stored inside it is lost, unless it was stored on a mounted volume
+2. Can we run two, or three instances of debian linux? . ***(1 mark)***Yes using docker we can run many instances.
 
 ## Running your own container with persistent storage
 
@@ -351,14 +351,14 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** drwxrwxrwx+ 2 codespace codespace  4096 Jan 31 10:20 myroot
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+drwxrwxrwx+ 2 codespace codespace  4096 Jan 31 10:20 myroot
 
 ## You are on your own, create your own static webpage
 
