@@ -1,6 +1,6 @@
 # OSProject Running Containers for Application Development
 
-Group Name: ColdPlay 
+Group Name: POP
 
 Section: 3
 
